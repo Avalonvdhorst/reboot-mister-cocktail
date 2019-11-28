@@ -4,7 +4,10 @@
   <div class="ing-list">
     <h2>Ingredients:</h2>
     <% @cocktail.doses.each do |dose| %>
-        <p> - <%= dose.description %> <%= dose.ingredient.name %></p>
+      <div class="d-flex">
+        <p> - <%= dose.description %> <%= dose.ingredient.name %> </p>
+        <p><%= link_to '<i class="fas fa-dumpster"></i>'.html_safe, dose_path(dose), {method: :delete} %></p>
+      </div>
     <% end %>
   </div>
   <h3 class="cocktail-name"><%= @cocktail.name %></h3>
