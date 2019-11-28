@@ -1,0 +1,13 @@
+<div class="container">
+  <h3 class="mt-4">Add a new dose to your cocktail</h3>
+  <div class="row">
+    <div class="col-8">
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.association :ingredient, input_html: { class: "dropdown-ing" }, label_html: { class: 'dropdown-ing' }, include_hidden: false %>
+        <%= f.input :description, input_html: {
+          class: "description-tag" }, label_html: { class: "description-tag"} %>
+        <%= f.button :submit, class: "btn btn-outline-secondary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

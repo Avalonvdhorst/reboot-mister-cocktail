@@ -1,1 +1,59 @@
 // Specific CSS for your home-page
+.home-header {
+  position: relative;
+  color: white;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  margin: 0auto;
+  h1 {
+  font-family: 'Roboto Mono', monospace !important;
+  font-weight: lighter;
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.49);
+  }
+}
+
+.add-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace !important;
+  font-weight: lighter;
+  border-radius: 2px;
+  padding: 3px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.coccard {
+  color: white;
+  height: 200px;
+  width: 340px;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 1px 8px 0.5px rgba(212,195,212,0.7);
+  //margin-bottom: 20px;
+  h3 {
+    font-family: 'Inconsolata', monospace !important;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+  }
+}

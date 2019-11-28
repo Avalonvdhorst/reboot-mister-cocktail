@@ -1,0 +1,20 @@
+// STYLING FOR NEW COCKTAIL FORM
+ h1 {
+  margin: 50px;
+ }
+
+ input[type=text] {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 15px;
+ }
+
+ button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  &:hover {
+    background-color: rgba(193, 186, 196, 0.7);
+  }
+ }

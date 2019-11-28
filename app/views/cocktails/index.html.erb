@@ -1,0 +1,19 @@
+<div class="home-header" style="background-image: url('https://images.unsplash.com/photo-1485265449635-ca623a55e95c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')">
+  <h3><%= link_to 'Add Cocktail', new_cocktail_path, class: "add-button" %></h3>
+  <h1>Welcome to your Cocktails</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-4">
+        <%= link_to cocktail_path(cocktail.id) do %>
+          <div class="coccard" style="background-image: url('https://images.unsplash.com/photo-1520880205996-43e8ed079873?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')">
+            <div>
+              <h3><%= cocktail.name %></h3>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <% end %>
+  </div>
+</div>
